@@ -19,7 +19,7 @@ model_name = 'all-MiniLM-L6-v2'
 model = SentenceTransformer(model_name)
 
 # load video index
-df = pl.scan_parquet('data/video-index.parquet')
+df = pl.scan_parquet('app/data/video-index.parquet')
 
 # create distance metric object
 dist_name = 'manhattan'
